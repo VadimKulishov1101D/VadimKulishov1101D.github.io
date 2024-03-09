@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    color: rgba(204,6,237,1);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(204,6,237,1);
+    font-size: 18px;
+}
+
+
+
+header {
+    border-radius: 50px;
+    background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 2s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    max-width: 1000px;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #6647ff;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+footer {
+    border-radius: 50px 50px 0px 0px;
+    background-color: #8000ff;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 1; /* добавьте это свойство */
+}
+
+/* Добавьте этот стиль, чтобы избежать перекрытия контента */
+section:last-child {
+    margin-bottom: 50px;
+}
+
+section#contact {
+    padding: 40px;
+    margin-bottom: 100px; /* Добавленный отступ в нижней части секции "Контакты" */
+}
